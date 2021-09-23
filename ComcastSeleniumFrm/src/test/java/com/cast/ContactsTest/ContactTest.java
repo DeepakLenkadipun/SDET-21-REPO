@@ -8,16 +8,13 @@ public class ContactTest {
 	
 	@Test(groups="smoketest")
 	public void createContactTest() {
-		String URL=System.getProperty("url");
-		String USERNAME=System.getProperty("username");
-		String PASSWORD=System.getProperty("password");
+		System.out.println("execute createcontactTest");
+		String ENV=System.getProperty("url");
 		String browser=System.getProperty("browserName");
 		
-		System.out.println(URL);
-		System.out.println(USERNAME);
-		System.out.println(PASSWORD);
-		System.out.println(browser);	
-			System.out.println("execute createcontactTest");
+		
+		System.out.println("browser======>"+browser+"  ,URL=====>"+ENV);	
+			
 		}
 	@Test(groups="regressiontest")
 	public void createContactWithOrgTest() {
